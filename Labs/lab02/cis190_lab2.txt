@@ -1,0 +1,1 @@
+1. Display help about the ls command while at the command line. Give your command.
