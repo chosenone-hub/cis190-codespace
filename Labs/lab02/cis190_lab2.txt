@@ -1,1 +1,27 @@
 1. Display help about the ls command while at the command line. Give your command.
+	man ls allows you to see the help discription of what ls functions can do in a directory.
+
+2. Use the man page to determine how to make "ls" display long listings with file sizes in human-readable format. Give your command. 
+	ls -l will allow you to list the contents of the directory in readable format with file type and size.
+	
+3. Read the man page for the mkdir command. Give the command and describe how to exit the man page. 
+	"man mkdir" gets you to the man page for mkdir. "q" allows you to quit to get back to the command line.
+	
+4. Read the man page for the mkdir command again and this time search for "parent" in that man page. Give the command you used to search for parent.
+	/parent allows you to search for the word parent in the man page for mkdir.
+ 
+5. Reopen the man page for mkdir then suspend that process (This is a review command from last week). Give the command to suspend.
+	Ctrl+Z will halt, stop or suspend a command and bring you back to the command line.
+
+6. Now you are back at the command line, give the command to show suspended jobs. Give the command.  
+	"jobs" will give you the list of jobs stopped or suspended.
+7.Give the command to restart your suspended job.
+ 	The command "fg (with the item number) will bring you back to the background process.
+
+8. Run the command "ls ~/home" with superuser privileges. Give the command and your answer. 
+	sudo ls ~/home
+
+9. Describe how to select a strong password.
+	password that has special character, number, upper case and lower case.
+
+10. After creating your file to test and make sure your file is in the correct location run "less /workspaces/cis190_codespace/labs/cis190_lab2.txt" and the less paging utility should open your file. If you get an error then check to see where you went wrong in the naming or or location of your file.
