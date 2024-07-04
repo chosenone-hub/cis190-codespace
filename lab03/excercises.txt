@@ -1,0 +1,47 @@
+cd /data
+sudo mkdir confirguration
+cd configuration
+sudo touch {n345qr,n678st}.cfg
+sudo mkdir {xq-67a,mq-1c,mojave,mq-9b,mq-20,mq-9}
+cd xq-67a
+sudo touch {n223wx,index,n901uv}.cfg
+cd ../
+cd mq-1c
+sudo touch {n789ef,n101gh,index}.cfg
+cd ../
+cd mq-9b
+sudo touch index.cfg
+cd ../
+cd mojave
+sudo touch {n456cd,index,n123ab}.cfg
+cd ../
+cd mq-9
+sudo touch {n112op,n890mn,index}.cfg
+cd ../
+cd mq-20
+sudo touch n234ij, n567kl,index}.cfg
+
+2. cd /data/aircraft/configurations/xq-67a
+3. From the configurations directory: sudo mv n345qr.cfg mq-1c
+4. From the configurations directory: sudo mv n6778st.cfg mojave
+5. 
+	sudo mkdir backup
+	sudo cp -r configurations backup
+6. ls -i
+1093566 index.cfg  1093565 n234ij.cfg  1093567 n567kl.cfg
+7. sudo rmdir configurations/mq-9b
+	If you try to rmdir without sudo, permissions will be denied. With the sudo command you will get an error message saying that the directory is not empty
+8. from aircraft directory:  sudo mkdir locations
+9. from aircraft directory: sudo ln -s configurations/{mq-9,mq-1c,xq-67a} locations
+10. cd configurations/mojave
+11. from configurations directory: sudo mv mq-9/n112op.cfg /data/aircraft/backup
+12. tree -s
+13. From the configurations directory: sudo mv mq-9/n890mn.cfg mq-20
+14. From the configurations directory: sudo ln -s mq-1c/n101gh.cfg /data/aircraft/locations
+15. cd /data/aircraft/configurations/mq-1c
+16. From locations directory: sudo rm xq-67a
+17. From configurations directory: sudo touch mojave/n567kl.cfg
+18. From configurations directory: ls -l
+19. From mq-9 directory: sudo mkdir test   then run: sudo rmdir test
+20. From xq-67a directory: sudo mv index.cfg main.cfg
+
